@@ -1,0 +1,38 @@
+#!/bin/sh
+
+copiaDeArquivos(){
+	pasta=$1
+	arquivos=$(ls $pasta)
+	echo "Arquivos em $pasta:"
+	echo $arquivos
+	for arquivo in $arquivos
+	do
+		echo "Copiando arquivo $arquivo..."
+		$(cp -r $pasta/$arquivo $2)
+	done
+	echo "Transferêcia concluída"
+	echo "powered by Ozeias"
+}
+
+verificaDiretorios(){
+	if [ -d $1 -a -d $2 ]
+	then
+		echo "Iniciando cópia de \"$1\" para \"$2\""
+		copiaDeArquivos $1 $2
+	elif [ ! -d $1 ]
+	then
+		echo "Erro: $1 não é um diretório"
+	elif [ ! -d $2 ]
+	then
+		echo "Erro: $2 não é um diretório"
+	else
+		echo "Erro desconhecido"
+	fi
+}
+
+if [ -n $1 -a -n $2 ]
+then
+	verificaDiretorios $1 $2
+else
+	echo "Erro: Falta argumentos. verifique a sintaxe\n copyto.sh <Diretório copiado> <Diretório de destino>"
+fi
