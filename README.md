@@ -10,7 +10,6 @@ And copy the archive to your /bin directory<br>
 <code>sudo cp -r copyto /bin</code><br>
 You should be copy the archive to your /usr/bin<br>
 <code>sudo cp -r /usr/bin</code><br>
-<code>
 </div>
 <h4>How to use?</h4>
 <div>
