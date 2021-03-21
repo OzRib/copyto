@@ -7,15 +7,15 @@ open the terminal and type:<br>
 After, enter in the directory<br>
 <code>cd copyto</code><br>
 And copy the archive to your /bin directory<br>
-<code>sudo cp -r copyto /bin</code>
-You should be copy the archive to your /usr/bin
-<code>sudo cp -r /usr/bin</code>
+<code>sudo cp -r copyto /bin</code><br>
+You should be copy the archive to your /usr/bin<br>
+<code>sudo cp -r /usr/bin</code><br>
 <code>
 </div>
 <h4>How to use?</h4>
 <div>
-Open the terminal and type
-<code>copyto directory1 directory2</code>
+Open the terminal and type<br>
+<code>copyto directory1 directory2</code><br>
 Replace the "directory1" to the directory what you want to copy<br>
 And replace the "directory2" to the target directory<br>
 </div>
