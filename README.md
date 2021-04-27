@@ -6,10 +6,10 @@ open the terminal and type:<br>
 <code>git clone https://github.com/OzRib/copyto.git</code><br>
 After, enter in the directory<br>
 <code>cd copyto</code><br>
-And copy the archive to your /bin directory<br>
-<code>sudo cp -r copyto /bin</code><br>
-You should be copy the archive to your /usr/bin<br>
-<code>sudo cp -r /usr/bin</code><br>
+And create a symlink to your /bin directory<br>
+<code>sudo ln copyto /bin/copyto</code><br>
+You should be create the symlink to your /usr/bin directory<br>
+<code>sudo ln copyto /usr/bin/copyto</code><br>
 </div>
 <h4>How to use?</h4>
 <div>
