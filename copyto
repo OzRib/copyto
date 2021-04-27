@@ -2,14 +2,10 @@
 
 copiaDeArquivos(){
 	pasta=$1
-	arquivos=$(ls $pasta -b)
+	arquivos=$(ls $pasta)
 	echo "Arquivos em $pasta:"
 	echo $arquivos
-	for arquivo in $arquivos
-	do
-		echo "Copiando arquivo $arquivo..."
-		$(cp -r $pasta/$arquivo $2)
-	done
+	cp -r $pasta/* $pasta
 	echo "Transferêcia concluída"
 	echo "powered by Ozeias"
 }
