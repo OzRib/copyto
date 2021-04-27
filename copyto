@@ -2,7 +2,7 @@
 
 copiaDeArquivos(){
 	pasta=$1
-	arquivos=$(ls $pasta)
+	arquivos=$(ls $pasta -b)
 	echo "Arquivos em $pasta:"
 	echo $arquivos
 	for arquivo in $arquivos
